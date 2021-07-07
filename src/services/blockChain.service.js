@@ -6,8 +6,10 @@ export default class BlockChain{
         console.log("fetching...")
         return axios({
             method: 'get',
-            url: '/api/v1/chains'
+            url: '/api/v1/chains',
+            headers: {
+                'Content-Type': 'application/json',
+            }
         })
     }
-
 }

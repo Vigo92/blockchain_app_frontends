@@ -16,7 +16,7 @@ const blockChainReducer = (state = blockChain, action) => {
             return{
                 ...state,
                 loading: action.payload.loading,
-                blockChain: action.payload.data,
+                blockChainList: action.payload.data.content,
             }
         case types.FETCH_BLOCK_CHAIN_ERROR:
             return{

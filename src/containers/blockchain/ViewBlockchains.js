@@ -28,7 +28,7 @@ export default function ViewBlockchains() {
         <div>
             <div className="container-fluid">
                 <p className="header_text">BlockChains</p>
-                {!loading ? (
+                {loading ? (
                     <div style={{textAlign: 'center', marginTop: '30px'}}>
                         <div className="spinner-border text-danger " role="status" >
                             <span className="sr-only">Loading...</span>
